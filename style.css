@@ -75,17 +75,19 @@ body{
     
 }
 
-main :first-child{
+#main_index :first-child{
     height: 500px;
     width: 850px;
     margin: auto;
     margin-top: 10px;
 }
 
-main :nth-child(2){
+#main_index :nth-child(2){
     padding-top: 10px;
+
 }
-main :nth-child(2) :first-child {
+
+#main_index :nth-child(2) :first-child {
     display: inline;
 
 }
