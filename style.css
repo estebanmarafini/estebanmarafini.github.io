@@ -35,7 +35,7 @@ header :first-child :last-child{
     color: black;
 }
 
-header :last-child ul {
+header :nth-child(2) ul {
     
     
     width: 50%;
@@ -48,25 +48,22 @@ header :last-child ul {
 }
 
 
-header :last-child {
-    background-color: white;
+header :nth-child(2) {
     
     display: flex;
     justify-content: center;
     
-    
-    
-    
 }
 
-header :last-child ul > li{
+header :nth-child(2) ul > li{
     margin: auto;
 }
 
-header :last-child ul  li a{
+header :nth-child(2) ul  li a{
     margin: auto;
     align-items: center;
 }
+
 
 
 body{
@@ -78,6 +75,20 @@ body{
     
 }
 
+main :first-child{
+    height: 500px;
+    width: 850px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main :nth-child(2){
+    padding-top: 10px;
+}
+main :nth-child(2) :first-child {
+    display: inline;
+
+}
 p {
     color: blue;
 }
