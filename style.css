@@ -2,7 +2,7 @@
 p {
   color: black;
   font-size: medium;
-  text-decoration: overline;
+  text-decoration: underline;
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
 }
@@ -102,7 +102,7 @@ header :nth-child(2) ul li a {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: burlywood;
+  background-color: rgba(137, 43, 226, 0.267);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -112,6 +112,8 @@ body {
   width: 850px;
   margin: auto;
   margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #main_index :nth-child(2) {
@@ -120,10 +122,6 @@ body {
 
 #main_index :nth-child(2) :first-child {
   display: inline;
-}
-
-p {
-  color: blue;
 }
 
 li {
