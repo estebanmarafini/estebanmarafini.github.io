@@ -76,9 +76,16 @@ header :nth-child(2) ul  li a{
     align-items: center;
 }
 
+#main_index :first-child{
+    height: 500px;
+    width: 850px;
+    margin: auto;
+    margin-top: 10px;
+}
+
 body{
     font-family: 'Lato', sans-serif;
-    
+    background-color: burlywood;
     background-repeat: no-repeat;
     background-size: cover;
 
