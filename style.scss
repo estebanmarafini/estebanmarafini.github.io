@@ -1,16 +1,21 @@
-%parrafo {
-    color: black;
-    font-size: medium;
-    text-decoration: underline;
-    text-decoration-style: solid;
+/*@import "./partials/mediaquerys";
+@import "./partials/main";*/
+
+@mixin parrafo ($color, $fontsize, $textdecoration, $textsyle) { 
+    color: $color;
+    font-size: $fontsize;
+    text-decoration: $textdecoration;
+    text-decoration-style: $textsyle;
 
 }
+
+
 
 p {
-    @extend %parrafo
+    @include parrafo (black, medium, solid, underline)
 }
 
-@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;1,100 & family= Smooch+Sans:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;1,100 & family= Montserrat:wght@300;600 & family= Roboto:wght@500; 700 & family= Smooch+Sans:wght@100 & display=swap');
 
 
 
@@ -33,6 +38,7 @@ header :first-child :hover{
     animation-name: logo;
     animation-duration: 5s;
     animation-delay: 2s
+    
     
 }
 
@@ -76,40 +82,33 @@ header :nth-child(2) ul  li a{
     align-items: center;
 }
 
-#main_index{
-    :first-child{
-    height: 500px !important;
-    width: 850px !important;
-    margin: auto;
-    margin-top: 10px;}
-        
-}
+
 
 
 body{
-    font-family: 'Lato', sans-serif;
-    background-color: rgba(137, 43, 226, 0.267);
+    font-family: 'Montserrat', sans-serif;
+    background-color: chocolate;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 #main_index :first-child {
-    height: 500px;
-    width: 850px;
-    margin: auto;
+    height: 600px;
+    width: 1000px;
+    margin:auto;
     margin-top: 10px;
-    box-sizing: border-box;
+    
 }
 
 #main_index :nth-child(2){
-    padding-top: 10px;
-
+    
+    width: 100%;
 }
 
 #main_index :nth-child(2) :first-child {
     display: inline;
-
+   
 }
 
 
@@ -257,49 +256,5 @@ form :nth-child(6) {
 }
 
 
-@media screen  and (max-width: 768px) {
-    #fotos4 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: auto;
-    }
-    #fotoNadia {
-        flex-direction: column;
-        max-width: 500px;
-        align-items: center;
-    }
-    #fotoHuguito {
-        flex-direction: column;
-        max-width: 500px;
-        align-items: center;
-    }
 
-    #fotoSonia {
-        flex-direction: column;
-        max-width: 500px;
-        align-items: center;
-    }
-
-    #fotoHugo {
-        flex-direction: column;
-        max-width: 500px;
-        align-items: center;
-    }
-    
-    main {
-        height: auto;
-        margin-bottom: 5px;
-        max-width: 100%;
-        background-size: cover;
-    }
-    form {
-        max-width: max-content;
-        
-    }
-    iframe { max-width: auto;
-        max-height: auto;
-    }
-
-}
        
