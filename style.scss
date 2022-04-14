@@ -1,5 +1,5 @@
-/*@import "./partials/mediaquerys";
-@import "./partials/main";*/
+@import "./partials/mediaquerys";
+@import "./partials/main";
 
 @mixin parrafo ($color, $fontsize, $textdecoration, $textsyle) { 
     color: $color;
@@ -88,8 +88,8 @@ header :nth-child(2) ul  li a{
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: chocolate;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
 
 }
 
@@ -98,7 +98,9 @@ body{
     width: 1000px;
     margin:auto;
     margin-top: 10px;
-    
+    button{
+        width: 150px;
+    }
 }
 
 #main_index :nth-child(2){
