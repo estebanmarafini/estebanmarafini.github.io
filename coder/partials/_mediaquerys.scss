@@ -1,0 +1,111 @@
+@media screen  and (max-width: 700px) {
+    header {
+        max-width: 400px !important;
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start !important;
+
+            
+            
+            :nth-child(2) {
+                max-width: 400px;
+                object-fit: cover;
+            }
+
+            
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 200px;
+                
+                li {
+                    flex-basis: content;
+                }
+            }
+
+            
+        }
+
+    
+    }
+
+
+
+    #fotos4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    #fotoNadia {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+    #fotoHuguito {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    #fotoSonia {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    #fotoHugo {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+    
+    main {
+        height: auto;
+        margin-bottom: 5px;
+        max-width: 100%;
+        background-size: cover;
+    }
+    form {
+        max-width: max-content;
+        
+    }
+    iframe { max-width: auto;
+        max-height: auto;
+    }
+
+    .fotoscursos{
+        height: 500px;
+        width: 500px;
+        margin:auto
+        
+    }
+
+    #main_contenido{
+        nav, h1, h2, video { max-width: 280px;
+        margin-left: 1px !important;
+        overflow: auto;
+        font-size: 16px !important;
+        }
+
+        video {
+            height: 250px !important;
+        }
+
+        h1 {
+            overflow: auto;
+        }
+    }
+
+    footer{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column !important;
+
+    }
+        
+}

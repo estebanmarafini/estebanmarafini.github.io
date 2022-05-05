@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    background-color:black;
+    color: white;
+    nav :last-child{
+        display: flex;
+        justify-self: end;
+    }
+}

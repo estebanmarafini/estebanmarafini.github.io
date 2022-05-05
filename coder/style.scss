@@ -1,0 +1,231 @@
+@import "./partials/mediaquerys";
+@import "./partials/main";
+@import "./partials/footer";
+
+@mixin parrafo ($color, $fontsize, $textdecoration, $textsyle) { 
+    color: $color;
+    font-size: $fontsize;
+    text-decoration: $textdecoration;
+    text-decoration-style: $textsyle;
+
+}
+
+
+
+p {
+    @include parrafo (black, medium, solid, underline)
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;1,100 & family= Montserrat:wght@300;600 & family= Roboto:wght@500; 700 & family= Smooch+Sans:wght@100 & display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+header :first-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: logo;
+    
+    
+}
+header :first-child :hover{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-delay: 2s
+    
+    
+}
+
+@keyframes logo {
+    0% { transporm:translate (3px 3px) ;}
+    50% { transform: rotate(20deg) ;}
+    100% {transform: scale(2, 3);}
+}
+ 
+header :first-child :last-child{
+    height: 75%;
+    color: black;
+}
+
+header :nth-child(2) ul {
+    
+    
+    width: 50%;
+    
+    
+    box-sizing: border-box;
+
+   
+
+}
+
+
+header :nth-child(2) {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+header :nth-child(2) ul > li{
+    margin: auto;
+}
+
+header :nth-child(2) ul  li a{
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/Images/fondo_claro.jpg);
+    width: 100%;
+    height: auto;
+   
+
+}
+
+#main_index :first-child {
+    height: 600px;
+    width: 1000px;
+    margin:auto;
+    margin-top: 10px;
+    button{
+        width: 150px;
+    }
+}
+
+#main_index :nth-child(2){
+    
+    width: 100%;
+}
+
+#main_index :nth-child(2) :first-child {
+    display: inline;
+   
+}
+
+
+li{
+    display: inline;
+    margin-left: 30px;
+    text-align: left;
+    list-style-type: circle;
+    
+}
+
+li p{color: black;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+
+}
+
+.margen {
+    padding-left:15px;
+    text-indent: 15PX;
+}
+
+
+
+.centrar {
+    text-align: center;
+    padding-right: 10px;
+    
+
+}
+
+#fotos4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(/Images/fondo_madera.jpg);
+    height: 800px;
+    width: 1100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    gap: 50px;
+    padding: 3px;
+    margin: auto;
+    
+    ul {
+        list-style-type: circle;
+        }
+}
+
+#fotoNadia {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 10px;
+    flex-direction:row;
+    
+    
+}
+
+#cvNadia {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    ul {
+        list-style-type: circle;
+        }
+    
+}
+
+
+    
+#fotoHuguito {
+    grid-column: 2;
+    grid-row: 1wq;
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 10px;
+    flex-direction: row;
+}
+
+
+#fotoSonia {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 10px;
+    flex-direction:row;
+    
+}
+
+#fotoHugo {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 10px;
+    flex-direction:row;
+    
+}
+
+
+
+
+
+       
