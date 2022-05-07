@@ -1,11 +1,29 @@
 footer{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 100px;
     background-color:black;
     color: white;
-    nav :last-child{
+    :last-child{
         display: flex;
-        justify-self: end;
+        flex-direction: column;
+        
+    }
+    img {
+        width: 2rem;
+        height: 2rem;
+        
+    }
+    p{
+        color: white;
+        display: flex;
+        flex-direction: row !important;
+        
+    }
+    :last-child{
+        display: flex;
+        
     }
 }
