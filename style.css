@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;1,100 & family= Montserrat:wght@300;600 & family= Roboto:wght@500; 700 & family= Smooch+Sans:wght@100 & display=swap");
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   header :first-child :first-child {
     margin: auto;
   }
